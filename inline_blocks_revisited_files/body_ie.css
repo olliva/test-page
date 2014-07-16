@@ -1,0 +1,102 @@
+﻿
+img.png {_behavior: url(style/iepngfix.htc);}
+
+
+
+
+/* BASE
+--------------------------------------------------------------------------- */
+
+#wrapper {_height: 100%;}
+
+
+.header {zoom: 1;}
+
+.footer {zoom: 1;}
+
+.content {zoom: 1;}
+
+
+
+/* MENU!!! */
+
+.menu-item {zoom: 1; *display: inline;}
+
+.menu-item_innerWrap {zoom: 1; *display: inline;}
+
+.menu-item_sizer {zoom: 1; display: none;}
+
+
+
+/* CONTENT BLOCK'S
+---------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* framework
+--------------------------------------------------------------------------- */
+
+/*
+
+#hover {_behavior: url(style/csshover.htc);}
+
+
+
+#width {_width: expression(offsetParent.offsetWidth - '2' + 'px');}
+#height {_height: expression(offsetParent.offsetHeight - '2' + 'px');}
+#ie_vertical_centered {_margin-top: expression((parentNode.offsetHeight - this.offsetHeight)<0 ? "0" : (parentNode.offsetHeight - this.offsetHeight)/2 + "px");}
+
+
+#min-width {_width: expression((document.documentElement.clientWidth || document.body.clientWidth) < 999? "1000px":"auto");}
+
+#max-height {_height: expression(this.scrollHeight > 332 ? "333px" : "auto");}
+
+#min_max_width {
+  width:expression(
+    (document.compatMode && document.compatMode == 'CSS1Compat')
+    ?
+    (document.documentElement.clientWidth < 1009 ? "1009px" : (document.documentElement.clientWidth > 1200 ? "1200px" : "auto"))
+    :
+    (document.body.clientWidth < 1009 ? "1009px" : (document.body.clientWidth > 1200 ? "1200px" : "auto"))
+  );
+}
+
+
+
+#png {_background: transparent; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/img.png', sizingMethod='crop image scale'); _clip:rect(0px 24px 49px 0px);}
+
+
+#png {
+    position:relative;
+    _behavior: expression((this.runtimeStyle.behavior="none")&&(this.pngSet?this.pngSet=true:(this.nodeName == "IMG" && this.src.toLowerCase().indexOf('.png')>-1?(this.runtimeStyle.backgroundImage = "none",
+        this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.src + "', sizingMethod='image')",
+        this.src = "images/transparent.gif"):(this.origBg = this.origBg? this.origBg :this.currentStyle.backgroundImage.toString().replace('url("','').replace('")',''),
+        this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.origBg + "', sizingMethod='crop')",
+        this.runtimeStyle.backgroundImage = "none")),this.pngSet=true)
+    );
+}
+
+
+
+#before_after { behavior: expression(!this.isInserted==true ? this.isInserted=(this.innerHTML = '<span style="position: absolute; display: block; top: 0px; left: 0px; width: 7px; height: 7px; font-size: 0px; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/corner_block_713_lt.png, sizingMethod=crop);"></span><span style="position: absolute; display: block; top: 0px; right: -1px; width: 7px; height: 7px; font-size: 0px; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/corner_block_713_rt.png, sizingMethod=crop);"></span>' + this.innerHTML + '<span style="position: absolute; display: block; bottom: -1px; left: 0px; width: 7px; height: 7px; font-size: 0px; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/corner_block_713_lb.png, sizingMethod=crop);"></span><span style="position: absolute; display: block; right: -1px; bottom: -1px; width: 7px; height: 7px; font-size: 0px; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/corner_block_713_rb.png, sizingMethod=crop);"></span>') : '');}
+
+*/
+
+
+
+
+
