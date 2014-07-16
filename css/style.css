@@ -120,6 +120,9 @@ ul li ul li:after {
   height: 3px;
   top: 6px;
 }
+ul li ul li a.opened {
+  font-weight: normal;
+}
 ul li ul li ul {
   margin-top: 8px;
   margin-bottom: 0;
@@ -296,6 +299,8 @@ table tbody tr.odd {
 .nav ul.withoutList > li div.outerContainer {
   display: inline-block;
   text-align: left;
+  vertical-align: top;
+  margin-top: -1px;
 }
 .ie7 .nav ul.withoutList > li div.outerContainer {
   zoom: 1;
@@ -304,11 +309,8 @@ table tbody tr.odd {
 .nav ul.withoutList > li img {
   display: inline-block;
   *display: inline;
-  margin-top: 7px;
+  margin-top: 6px;
   vertical-align: top;
-}
-.ie7 .nav ul.withoutList > li img {
-  margin: 7px 0 0;
 }
 .nav ul.withoutList > li.extreme {
   color: transparent;
@@ -334,7 +336,7 @@ table tbody tr.odd {
 }
 .nav ul.withoutList .hiddenMenu {
   position: absolute;
-  left: -30px;
+  left: -20px;
   top: 33px;
   z-index: 10;
   padding: 0 2px 3px;
@@ -349,7 +351,7 @@ table tbody tr.odd {
   position: absolute;
   z-index: 2;
   top: 1px;
-  left: -1px;
+  left: -2px;
   width: 4px;
   height: 4px;
   background: url("../images/menu-left-circle.png") no-repeat;
@@ -365,7 +367,7 @@ table tbody tr.odd {
   position: absolute;
   z-index: 2;
   top: 1px;
-  right: -1px;
+  right: -2px;
   width: 4px;
   height: 4px;
   background: url("../images/menu-right-circle.png") no-repeat;
@@ -417,13 +419,10 @@ table tbody tr.odd {
   bottom: 0;
 }
 .nav ul.withoutList .hiddenMenu ul {
-  padding-left: 32px;
-  padding-right: 21px;
   margin: 0;
   background: #e5e5e5;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
-  padding-top: 10px;
-  padding-bottom: 20px;
+  padding: 5px 25px 12px 32px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
 }
@@ -431,14 +430,17 @@ table tbody tr.odd {
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.6);
 }
 .ie8 .nav ul.withoutList .hiddenMenu ul {
-  padding-left: 27px;
-  padding-right: 16px;
-  padding-bottom: 14px;
+  padding: 5px 20px 6px 27px;
+}
+.nav ul.withoutList .hiddenMenu ul li {
+  font: normal normal 11px/23px Arial, helvetica, arial, sans-serif;
+  margin: 0;
 }
 .nav ul.withoutList .hiddenMenu ul li:after {
   background: #b7b7b7;
   width: 3px;
   height: 3px;
+  top: 8px;
 }
 .nav ul.withoutList .hiddenMenu ul a {
   white-space: nowrap;
@@ -926,4 +928,31 @@ footer .searchForm button img {
 }
 .ie7 footer .searchForm button img {
   margin-top: 2px;
+}
+.ui-widget-content .ui-datepicker-header {
+  background: #ee4439;
+  border-color: #ee4439;
+  color: #fff;
+}
+.ui-widget-content .ui-datepicker-header a {
+  color: #fff;
+}
+.ui-datepicker-calendar thead {
+  background: transparent;
+}
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight {
+  background: #fbf8ee;
+}
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus {
+  background: #ee4439;
+  color: #fff;
+  border-color: #ee4439;
+  font-weight: normal;
 }
