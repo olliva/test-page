@@ -88,6 +88,11 @@ a.opened {
   color: #4b5c65;
   font-weight: bold;
 }
+span.opened {
+  text-decoration: none;
+  color: #4b5c65;
+  font-weight: bold;
+}
 /*list style*/
 ul {
   font: normal normal 12px/16px Arial, helvetica, arial, sans-serif;
@@ -120,7 +125,7 @@ ul li ul li:after {
   height: 3px;
   top: 6px;
 }
-ul li ul li a.opened {
+ul li ul li .opened {
   font-weight: normal;
 }
 ul li ul li ul {

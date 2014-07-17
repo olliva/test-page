@@ -1,5 +1,11 @@
 $(function () {
 
+    var isIE11 = !!navigator.userAgent.match(/Trident.*rv[ :]*11\./);
+    if (isIE11){
+        $('body').addClass('gtie8');
+    }
+
+
     /*for selects*/
     $("#citySelect").selectmenu();
     /*//for selects*/
@@ -100,27 +106,36 @@ $(function () {
     function hideErrorMessage(element){
         $(element).removeClass('errorInput').closest('.formLine').find('.error').hide();
     }
+
+    function checkInputField(element, errorEmpty, errorVal){
+        if ($(element).val() == 0) {
+            showErrorMessage(element, errorEmpty);
+            hasError = 1;
+        }
+        else if ($(element).hasClass('nameInput') && !validateName($(element).val())) {
+            showErrorMessage(element, errorVal);
+            hasError = 1;
+        }
+        else {
+            hideErrorMessage(element);
+        }
+    }
     /*formValidation*/
+    var hasError;
     $('button[type="submit"]').on('click', function (e) {
-        var hasError = 0;
+        hasError = 0;
         $(this).closest('form').find('input[type="text"]').each(function (index, element) {
-            if ($(element).val() == 0) {
-                showErrorMessage(element, '.empty');
-                hasError = 1;
-            }
-            else if ($(element).hasClass('nameInput') && !validateName($(element).val())) {
-                showErrorMessage(element, '.fieldError');
-                hasError = 1;
-            }
-            else {
-                hideErrorMessage(element);
-            }
+            checkInputField(element, '.empty', '.fieldError');
         });
         if (hasError) {
             e.preventDefault();
         }
     });
     /*//formValidation*/
+
+    $('input[type="text"]').on('blur change', function(){
+        checkInputField(this, '.empty', '.fieldError');
+    });
 
     /*cards height*/
     (function () {
