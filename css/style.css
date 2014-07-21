@@ -351,6 +351,7 @@ table tbody tr.odd {
 .ie8 .nav ul.withoutList .hiddenMenu {
   overflow: visible;
   padding: 0;
+  top: 34px;
 }
 .nav ul.withoutList .hiddenMenu .vLeftAngle {
   position: absolute;
